@@ -9,7 +9,9 @@ interface AvatarProps {
 const Avatar = ({ w, h, icon }: AvatarProps) => {
   return (
     <div
-      className={`grid place-items-center w-${w} h-${h} rounded-full bg-gray-200`}
+      className={
+        "grid place-items-center rounded-full bg-gray-200" + ` w-${w} h-${h}`
+      }
     >
       {icon}
     </div>
